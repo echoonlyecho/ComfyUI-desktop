@@ -17,7 +17,7 @@ jobs:
         shell: bash
 
       - name: Build
-        uses: ./.github/actions/build/windows/todesktop
+        uses: ./.github/actions/build/todesktop
         with:
           build-targets: '--targets=@electron-forge/maker-zip'
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
